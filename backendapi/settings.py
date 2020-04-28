@@ -48,9 +48,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000', 'localhost:4200'
-)
+
 ROOT_URLCONF = 'backendapi.urls'
 
 TEMPLATES = [
@@ -72,7 +70,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backendapi.wsgi.application'
 
 CORS_ORIGIN_WHITELIST =[
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://kappfmri.firebaseapp.com'
 ]
 
 
