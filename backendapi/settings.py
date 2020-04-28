@@ -48,7 +48,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000', 'localhost:4200'
+)
 ROOT_URLCONF = 'backendapi.urls'
 
 TEMPLATES = [
@@ -85,7 +87,11 @@ DATABASES = {
     # }
 }
 
-
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': {
+        'rest_framework.permissions.IsAuthenticated',
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
