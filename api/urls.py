@@ -5,9 +5,9 @@ from rest_framework import routers
 from .views import UserViewSet , UserProgressViewSet ,DormitorysViewSet
 
 router = routers.DefaultRouter()
-router.register('users',UserViewSet)
-router.register('userprogress',UserProgressViewSet)
-router.register('dormitorys', DormitorysViewSet)
+router.register(r'users',UserViewSet)
+router.register(r'userprogress',UserProgressViewSet)
+router.register(r'dormitorys', DormitorysViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
