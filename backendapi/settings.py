@@ -72,7 +72,8 @@ WSGI_APPLICATION = 'backendapi.wsgi.application'
 CORS_ORIGIN_WHITELIST =[
     'http://localhost:3000',
     'https://kappfmri.firebaseapp.com',
-    'https://kappfmri.web.app'
+    'https://kappfmri.web.app',
+    'https://umbridge-diary.netlify.app'
 ]
 
 
